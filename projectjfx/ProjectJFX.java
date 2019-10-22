@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pokerjfx;
+package projectjfx;
 
 import java.io.IOException;
 import javafx.application.Application;
@@ -20,14 +20,12 @@ import javafx.stage.Stage;
  *
  * @author cerigoff
  */
-public class PokerJFX extends Application {
+public class ProjectJFX extends Application {
     
      @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root;
-        root = FXMLLoader.load(getClass().getResource("pokerFMXL.fxml"));
-        Scene scene;
-        scene = new Scene(root);
+        Parent root = FXMLLoader.load(getClass().getResource("/scene/Poker.fxml"));
+        Scene scene = new Scene(root);
         
         primaryStage.setTitle("Poker");
         primaryStage.setScene(scene);

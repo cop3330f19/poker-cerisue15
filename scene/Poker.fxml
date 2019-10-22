@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectjfx.FXMLDocumentController">
    <children>
       <AnchorPane prefHeight="399.0" prefWidth="600.0">
          <children>
-            <Label fx:id="rank" layoutX="66.0" layoutY="32.0" text="Rank:">
+            <Label fx:id="rank" layoutX="67.0" layoutY="32.0" text="Rank:">
                <font>
                   <Font size="18.0" />
                </font></Label>
@@ -24,7 +24,7 @@
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label fx:id="diamonds" layoutX="343.0" layoutY="32.0" text="Suit: Diamond=D,">
+            <Label fx:id="diamonds" layoutX="343.0" layoutY="32.0" text="Suit: Diamonds=D,">
                <font>
                   <Font size="18.0" />
                </font></Label>
@@ -36,38 +36,38 @@
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label fx:id="card1" layoutX="67.0" layoutY="134.0" text="Card #1:">
+            <Label layoutX="67.0" layoutY="134.0" text="Card #1:">
                <font>
                   <Font size="15.0" />
                </font></Label>
-            <Label fx:id="card2" layoutX="66.0" layoutY="168.0" text="Card #2:">
+            <Label layoutX="66.0" layoutY="168.0" text="Card #2:">
                <font>
                   <Font size="15.0" />
                </font></Label>
-            <Label fx:id="card3" layoutX="68.0" layoutY="202.0" text="Card #3">
+            <Label layoutX="68.0" layoutY="202.0" text="Card #3">
                <font>
                   <Font size="15.0" />
                </font></Label>
-            <Label fx:id="card5" layoutX="68.0" layoutY="268.0" text="Card #5">
+            <Label layoutX="68.0" layoutY="268.0" text="Card #5">
                <font>
                   <Font size="15.0" />
                </font></Label>
-            <Label fx:id="card4" layoutX="68.0" layoutY="235.0" text="Card #4">
+            <Label layoutX="68.0" layoutY="235.0" text="Card #4">
                <font>
                   <Font size="15.0" />
                </font></Label>
             <TextField fx:id="rank4" layoutX="147.0" layoutY="230.0" />
-            <TextField fx:id="rank1" layoutX="147.0" layoutY="129.0" />
+            <TextField fx:id="rank1" layoutX="147.0" layoutY="129.0" onInputMethodTextChanged="#getRank1" />
             <TextField fx:id="rank5" layoutX="147.0" layoutY="263.0" />
             <TextField fx:id="rank3" layoutX="147.0" layoutY="197.0" />
             <TextField fx:id="rank2" layoutX="147.0" layoutY="163.0" />
-            <TextField fx:id="suit1" layoutX="425.0" layoutY="129.0" prefHeight="27.0" prefWidth="23.0" />
-            <TextField fx:id="suit2" layoutX="425.0" layoutY="163.0" prefHeight="27.0" prefWidth="23.0" />
-            <TextField fx:id="suit5" layoutX="425.0" layoutY="263.0" prefHeight="27.0" prefWidth="23.0" />
-            <TextField fx:id="suit4" layoutX="425.0" layoutY="230.0" prefHeight="27.0" prefWidth="23.0" />
-            <TextField fx:id="suit3" layoutX="425.0" layoutY="197.0" prefHeight="27.0" prefWidth="23.0" />
-            <Button fx:id="displayHand_button" layoutX="192.0" layoutY="302.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="217.0" text="Display Type of Hand" />
-            <TextArea fx:id="display_box1" layoutX="102.0" layoutY="343.0" prefHeight="42.0" prefWidth="397.0" />
+            <TextField fx:id="suit1" layoutX="425.0" layoutY="129.0" prefHeight="27.0" prefWidth="40.0" />
+            <TextField fx:id="suit2" layoutX="425.0" layoutY="163.0" prefHeight="27.0" prefWidth="40.0" />
+            <TextField fx:id="suit5" layoutX="425.0" layoutY="263.0" prefHeight="27.0" prefWidth="40.0" />
+            <TextField fx:id="suit4" layoutX="425.0" layoutY="230.0" prefHeight="27.0" prefWidth="40.0" />
+            <TextField fx:id="suit3" layoutX="425.0" layoutY="197.0" prefHeight="27.0" prefWidth="40.0" />
+            <Button fx:id="display_button" layoutX="192.0" layoutY="302.0" mnemonicParsing="false" onAction="#getCards" prefHeight="27.0" prefWidth="217.0" text="Display Type of Hand" />
+            <TextArea fx:id="displayMessage" layoutX="102.0" layoutY="343.0" prefHeight="42.0" prefWidth="397.0" />
          </children>
       </AnchorPane>
    </children>
